@@ -12,24 +12,21 @@ html, body {
     margin: 0;
     padding: 0;
     background-image: url("../Assets/room3.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .yarn1 {
-    margin-top: -3rem;
+    margin-top: -4.3rem;
 }
 .yarn1_img {
     width: 3%;
     margin-left: 40rem;
-    margin-top:1rem;
+    margin-top:1rem ;
     animation-name: rotate;
     animation-duration: 800ms;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
 }
 @keyframes rotate {
     from {
@@ -63,12 +60,11 @@ html, body {
     width: 9%;
     top: 18.5rem;
     left: 44.5rem;
-    animation-name: move;
+    animation-name: play;
     animation-duration: 2000ms;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
 }
-@keyframes move {
+@keyframes play {
     from {
         transform: rotate(0deg);
     }
@@ -80,17 +76,17 @@ html, body {
 .text {
     position: absolute;
     z-index: 100;
-    top: 37rem;
+    top: 35rem;
     font-weight: 600;
     top: 34rem;
     font-size:1.4rem;
     margin-left:1.1rem;
-    margin-top:2rem !important;
+    margin-top:0.5rem !important;
 }
 .start {
     position: absolute;
     z-index: 100;
-    top: 38.5rem;
+    top: 37.5rem;
     margin-left:1.2rem;
 }
 .start_btn {
@@ -108,10 +104,10 @@ html, body {
     z-index: 50;
 }
 .pillow_img {
-    top: 36rem;
+    top: 34.2rem;
     left: 35rem;
 }
 .yarn2_img {
-    top: 36rem;
+    top: 34.2rem;
     right: 33rem;
 }
