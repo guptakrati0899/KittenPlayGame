@@ -35,7 +35,9 @@ html, body {
     height: 10vh;
     width: 10vw;
     margin-top: 3rem;
+    cursor: pointer;
 }
 .off {
     margin-right: 2rem;
+    cursor: pointer;
 }
