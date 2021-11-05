@@ -25,6 +25,7 @@ html, body {
 .yarn1_img {
     width: 3%;
     margin-left: 40rem;
+    margin-top:1rem;
     animation-name: rotate;
     animation-duration: 800ms;
     animation-iteration-count: infinite;
@@ -42,7 +43,7 @@ html, body {
 .carpet_img {
     position: absolute;
     z-index: 0;
-    margin-left: -19rem;
+    margin-left: -21.5rem;
     height: 96vh;
     transform:
         rotateX(65deg)
@@ -53,15 +54,15 @@ html, body {
     position: absolute;
     width: 18%;
     margin-left: -8rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
     z-index: 1;
 }
 .kitty_img {
     position: absolute;
     z-index: 1;
     width: 9%;
-    top: 17rem;
-    left: 39rem;
+    top: 18.5rem;
+    left: 44.5rem;
     animation-name: move;
     animation-duration: 2000ms;
     animation-iteration-count: infinite;
@@ -79,13 +80,18 @@ html, body {
 .text {
     position: absolute;
     z-index: 100;
-    top: 31rem;
+    top: 37rem;
     font-weight: 600;
+    top: 34rem;
+    font-size:1.4rem;
+    margin-left:1.1rem;
+    margin-top:2rem !important;
 }
 .start {
     position: absolute;
     z-index: 100;
-    top: 33.5rem;
+    top: 38.5rem;
+    margin-left:1.2rem;
 }
 .start_btn {
     background-color: #ff9100;
@@ -102,10 +108,10 @@ html, body {
     z-index: 50;
 }
 .pillow_img {
-    top: 31rem;
-    left: 33rem;
+    top: 36rem;
+    left: 35rem;
 }
 .yarn2_img {
-    top: 31rem;
+    top: 36rem;
     right: 33rem;
 }
