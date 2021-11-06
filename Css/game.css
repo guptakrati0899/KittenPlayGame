@@ -47,6 +47,11 @@ html, body {
     transform:
         rotateZ(18deg);
 }
+.yellow_star {
+    width: 3.2vw;
+    transform:
+        rotateZ(0deg);   
+}
 .rating-1 {
     position: relative;
     top: -0.9rem;
@@ -88,20 +93,10 @@ input {
     font-size: 1.1rem;
     position: fixed;
     right: 33rem;
-    animation-name: move;
-    animation-duration: 2200ms;
-    animation-timing-function: ease-out;
+  
 }
 
-@keyframes move{
-    from {
-        right: 0rem;
-    }
 
-    to {
-        right: 33rem;
-    }    
-}
 .carpet_img1 {
     position: absolute;
     z-index: 0;
@@ -112,6 +107,24 @@ input {
         rotateX(70deg)
         rotateZ(180deg);
     transform-style: preserve-3d;
+}
+
+.text-kitty{
+   
+    animation-name: move;
+    animation-duration: 2200ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes move{
+    from {
+        top:-5rem;
+        transform: translateX(575px)
+    }
+    to {
+        top:10rem;
+        transform: translateX(10px);
+    }   
 }
 .cat1, .cat2, .cat3, .cat4 {
     width: 6%;
@@ -130,16 +143,12 @@ input {
 @keyframes catmove{
     from {
         left:35rem;
-      
-        
-
 
     }
 
     to{
         left:32rem;
-        
-
+    
     }
     
 }
@@ -157,15 +166,11 @@ input {
     from {
         left:29.8rem;
       
-        
-
 
     }
 
     to{
         left:26.8rem;
-        
-
     }
     
 }
@@ -204,15 +209,11 @@ input {
     from {
         left:32rem;
       
-        
-
-
     }
 
     to{
         left:29rem;
-        
-
+    
     }
     
 }
@@ -223,72 +224,70 @@ input {
     position: fixed;
     right: 33rem;
 }
+
+
 .blackcat1{
     width: 6%;
     position: fixed;
     right: 33rem;
     top: 17.5rem;
-    animation-name: bmove;
-    animation-duration: 2200ms;
+    animation-name: bcatmove1;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+  
    
  
 }
 
 
-@keyframes bmove{
+@keyframes bcatmove1{
     from {
-        right:15rem;
-      
-
+        right: 33rem;
     }
 
-    to{
-        right:33rem;
-    }
-    
+    to {
+        right: 35rem;
+    }    
 }
+
 .blackcat2 {
     right: 27.8rem;
     top: 21.8rem;
     width: 6%;
     position: fixed;
-    animation-name: bmove;
-    animation-duration: 2200ms;
+    animation-name: bmove2;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
 }
 
 
-@keyframes bmove{
+@keyframes bmove2{
     from {
-        right:10rem;
-      
-
+        right: 27.8rem;
     }
 
-    to{
-        right:27.8rem;
-    }
-    
+    to {
+        right: 29.8rem;
+    }    
 }
 .blackcat3 {
-    right: 34rem;
+    right: 30rem;
     top: 27rem;
     width: 6%;
     position: fixed;
-    animation-name: bmove;
-    animation-duration: 2200ms;
+    animation-name: bmove3;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
 }
 
-@keyframes bmove{
+@keyframes bmove3{
     from {
-        right:10rem;
-      
-
+        right: 32rem;
     }
 
-    to{
-        right:27rem;
-    }
-    
+    to {
+        right: 34rem;
+    }    
 }
 
 .result {
@@ -296,16 +295,26 @@ input {
     height: 15vh;
     position: fixed;
     left: 33rem;
-    top: 36rem;
+    top: 35.5rem;
     border: 3px solid #000;
     background-color: #f31eb3;
     border-radius: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
 
 
-.btn0, .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9{
+.btn_input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.4rem;
+    text-align: center;
+    width: 30%;
+    margin-left: 1.5rem;
+}
+.btn_input span{
     background-color: maroon;
     border: 1px solid lightgrey;
     border-radius: 18px;
@@ -313,42 +322,77 @@ input {
     height: 4vh;
     font-size: 1.25rem;
     color: #fff;
-    position: relative;
-    margin-right: 0.4rem;
-    left: 1.5rem;
-    top: 0.8rem;
     cursor: pointer;
+    margin-top: 0.5rem;
 }
-.btn5, .btn6, .btn7, .btn8, .btn9 {
-    top: 3.5rem;
-    left: -11.2rem;
-}
-.btn0:hover, .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover, .btn6:hover, .btn7:hover, .btn8:hover, .btn9:hover {
-    background-color: #ff9100;
+.btn_input span:hover {
+    background-color: #ff4800;
 }
 .answer1 {
-    position: relative;
-    left: 16rem;
     background-color: #fff;
     height: 6.2vh;
-    width: 5vw;
+    width: 5.5vw;
     font-size: 1.5rem;
     border: 2px solid #000;
     color: #000;
     text-align: center;
     border-radius: 8px;
+    margin: 1.5rem 1rem 0rem 1.5rem;
 }
 .enter {
-    position: relative;
-    left: 16.6rem;
-    background-color: #006400;
+    background-color: #0db80d;
     height: 6.5vh;
     width: 5.6vw;
     font-size: 1.5rem;
     border: 2px solid maroon;
     border-radius: 8px;
     cursor: pointer;
+    margin-top: 1.6rem;
 }
 .enter:hover {
     background-color: #ff9100;
+}
+
+.win, .loose {
+    width: 12%;
+    position: fixed;
+    left: 43rem;
+    top: 18rem;
+    animation-name: move-text;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+   
+}
+@keyframes move-text {
+    0% {
+        transform: rotate(-25deg);
+    }
+     
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}
+.win_text, .loose_text {
+    text-align: center;
+    position: relative;
+    left: 46.4rem;
+    top: 10.5rem;
+    font-size: 2.2rem;
+    font-weight:500;
+    color: #006400;
+    width: 5%;
+    animation-name: move-text;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    
+}
+.loose_text {
+    width: 10%;
+    left: 44rem;
 }
