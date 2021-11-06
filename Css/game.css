@@ -1,0 +1,234 @@
+html, body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.game {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Assets/room3.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.logo_img {
+    width: 10%;
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+}
+.rating {
+    width: 33vw;
+    height: 8vh;
+    position: fixed;
+    left: 25rem;
+    top: 2.5rem;
+    border: 3px solid #000;
+    background-color: #f31eb3;
+    border-radius: 30px;
+}
+.trophy {
+    width: 3.5vw;
+    position: relative;
+    left: 0.2rem;
+    top: 0.2rem;
+    transform:
+        rotateZ(-20deg);
+}
+.star {
+    width: 3vw;
+    position: relative;
+    top: -0.1rem;
+    margin-left: 1rem;
+    filter: grayscale(100%);
+    transform:
+        rotateZ(18deg);
+}
+.rating-1 {
+    position: relative;
+    top: -0.8rem;
+    left: 0.8rem;
+    width: 4.3vw;
+    height: 7.2vh;
+    border-radius: 40px;
+    border: 1px solid #fff;
+}
+input {
+    font-size: 1.9rem;
+    padding: 1px 10px;
+}
+.volume, .logout {
+    width: 3vw;
+    height: 6vh;
+    position: fixed;
+    right: 19rem;
+    top: 3rem;
+    border: 3px solid #000;
+    background-color: #f31eb3;
+    border-radius: 20px;
+}
+.volume_img, .logout_img {
+    width: 1.5vw;
+    position: relative;
+    left: 0.6rem;
+    top: 0.6rem;
+}
+.logout {
+    right: 5rem;
+}
+.carpet_img1 {
+    position: absolute;
+    z-index: 0;
+    left: 24rem;
+    top: 3rem;
+    height: 110vh;
+    transform:
+        rotateX(70deg)
+        rotateZ(180deg);
+    transform-style: preserve-3d;
+}
+.cat1, .cat2, .cat3, .cat4 {
+    width: 6%;
+    position: fixed;
+    left: 35rem;
+    top: 15.5rem;
+   
+}
+.cat1{
+    animation-name: catmove;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes catmove{
+    from {
+        left:35rem;
+      
+        
+
+
+    }
+
+    to{
+        left:32rem;
+        
+
+    }
+    
+}
+
+.cat2 {
+    left: 29.8rem;
+    top: 19.8rem;
+    animation-name: catmove1;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes catmove1{
+    from {
+        left:29.8rem;
+      
+        
+
+
+    }
+
+    to{
+        left:26.8rem;
+        
+
+    }
+    
+}
+.cat3 {
+    left: 38rem;
+    top: 21rem;
+    animation-name: catmove2;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    
+}
+.cat4 {
+    left: 32rem;
+    top: 25rem;
+    animation-name: catmove3;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+}
+@keyframes catmove2{
+    from {
+        left:38rem;
+      
+        
+
+
+    }
+
+    to{
+        left:35rem;
+        
+
+    }
+    
+}
+@keyframes catmove3{
+    from {
+        left:32rem;
+      
+        
+
+
+    }
+
+    to{
+        left:29rem;
+        
+
+    }
+    
+}
+.helper_text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: fixed;
+    right: 33rem;
+}
+.blackcat1, .blackcat2, .blackcat3{
+    width: 6%;
+    position: fixed;
+    right: 33rem;
+    top: 15.5rem;
+}
+.blackcat2 {
+    right: 27.8rem;
+    top: 19.8rem;
+}
+.blackcat3 {
+    right: 36rem;
+    top: 21rem;
+}
+
+.result {
+    width: 30vw;
+    height: 15vh;
+    position: fixed;
+    left: 33rem;
+    top: 31rem;
+    border: 3px solid #000;
+    background-color: #f31eb3;
+    border-radius: 50px;
+}
+
+.text-kitty {
+    /* animation-name: moveY;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+}
