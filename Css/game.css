@@ -49,10 +49,10 @@ html, body {
 }
 .rating-1 {
     position: relative;
-    top: -0.8rem;
+    top: -0.9rem;
     left: 0.8rem;
-    width: 4.3vw;
-    height: 7.2vh;
+    width: 5.5vw;
+    height: 7vh;
     border-radius: 40px;
     border: 1px solid #fff;
 }
@@ -94,7 +94,7 @@ input {
     width: 6%;
     position: fixed;
     left: 35rem;
-    top: 15.5rem;
+    top: 17.5rem;
    
 }
 .cat1{
@@ -123,7 +123,7 @@ input {
 
 .cat2 {
     left: 29.8rem;
-    top: 19.8rem;
+    top: 21.8rem;
     animation-name: catmove1;
     animation-duration: 800ms;
     animation-iteration-count: infinite;
@@ -147,8 +147,8 @@ input {
     
 }
 .cat3 {
-    left: 38rem;
-    top: 21rem;
+    left: 39rem;
+    top: 23rem;
     animation-name: catmove2;
     animation-duration: 800ms;
     animation-iteration-count: infinite;
@@ -156,14 +156,14 @@ input {
 }
 .cat4 {
     left: 32rem;
-    top: 25rem;
+    top: 27rem;
     animation-name: catmove3;
     animation-duration: 800ms;
     animation-iteration-count: infinite;
 }
 @keyframes catmove2{
     from {
-        left:38rem;
+        left:39rem;
       
         
 
@@ -171,7 +171,7 @@ input {
     }
 
     to{
-        left:35rem;
+        left:36rem;
         
 
     }
@@ -220,15 +220,59 @@ input {
     height: 15vh;
     position: fixed;
     left: 33rem;
-    top: 31rem;
+    top: 36rem;
     border: 3px solid #000;
     background-color: #f31eb3;
     border-radius: 50px;
 }
 
-.text-kitty {
-    /* animation-name: moveY;
-    animation-duration: 800ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; */
+
+
+
+.btn0, .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9{
+    background-color: maroon;
+    border: 1px solid lightgrey;
+    border-radius: 18px;
+    width: 2vw;
+    height: 4vh;
+    font-size: 1.25rem;
+    color: #fff;
+    position: relative;
+    margin-right: 0.4rem;
+    left: 1.5rem;
+    top: 0.8rem;
+    cursor: pointer;
+}
+.btn5, .btn6, .btn7, .btn8, .btn9 {
+    top: 3.5rem;
+    left: -11.2rem;
+}
+.btn0:hover, .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover, .btn6:hover, .btn7:hover, .btn8:hover, .btn9:hover {
+    background-color: #ff9100;
+}
+.answer1 {
+    position: relative;
+    left: 16rem;
+    background-color: #fff;
+    height: 6.2vh;
+    width: 5vw;
+    font-size: 1.5rem;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    border-radius: 8px;
+}
+.enter {
+    position: relative;
+    left: 16.6rem;
+    background-color: #006400;
+    height: 6.5vh;
+    width: 5.6vw;
+    font-size: 1.5rem;
+    border: 2px solid maroon;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.enter:hover {
+    background-color: #ff9100;
 }
