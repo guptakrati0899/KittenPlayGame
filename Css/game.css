@@ -60,6 +60,8 @@ input {
     font-size: 1.9rem;
     padding: 1px 10px;
 }
+
+
 .volume, .logout {
     width: 3vw;
     height: 6vh;
@@ -78,6 +80,27 @@ input {
 }
 .logout {
     right: 5rem;
+}
+
+.helper_text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: fixed;
+    right: 33rem;
+    animation-name: move;
+    animation-duration: 2200ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes move{
+    from {
+        right: 0rem;
+    }
+
+    to {
+        right: 33rem;
+    }    
 }
 .carpet_img1 {
     position: absolute;
@@ -200,19 +223,72 @@ input {
     position: fixed;
     right: 33rem;
 }
-.blackcat1, .blackcat2, .blackcat3{
+.blackcat1{
     width: 6%;
     position: fixed;
     right: 33rem;
-    top: 15.5rem;
+    top: 17.5rem;
+    animation-name: bmove;
+    animation-duration: 2200ms;
+   
+ 
+}
+
+
+@keyframes bmove{
+    from {
+        right:15rem;
+      
+
+    }
+
+    to{
+        right:33rem;
+    }
+    
 }
 .blackcat2 {
     right: 27.8rem;
-    top: 19.8rem;
+    top: 21.8rem;
+    width: 6%;
+    position: fixed;
+    animation-name: bmove;
+    animation-duration: 2200ms;
+}
+
+
+@keyframes bmove{
+    from {
+        right:10rem;
+      
+
+    }
+
+    to{
+        right:27.8rem;
+    }
+    
 }
 .blackcat3 {
-    right: 36rem;
-    top: 21rem;
+    right: 34rem;
+    top: 27rem;
+    width: 6%;
+    position: fixed;
+    animation-name: bmove;
+    animation-duration: 2200ms;
+}
+
+@keyframes bmove{
+    from {
+        right:10rem;
+      
+
+    }
+
+    to{
+        right:27rem;
+    }
+    
 }
 
 .result {
