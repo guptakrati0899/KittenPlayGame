@@ -93,6 +93,7 @@ input {
     font-size: 1.1rem;
     position: fixed;
     right: 33rem;
+    top: 8rem;
   
 }
 
@@ -110,19 +111,20 @@ input {
 }
 
 .text-kitty{
-   
-    animation-name: move;
+
+    position: relative;
+      animation-name: moveb;
     animation-duration: 2200ms;
     animation-timing-function: ease-out;
 }
 
-@keyframes move{
+@keyframes moveb{
     from {
-        top:-5rem;
+        top: -8.9rem;
         transform: translateX(575px)
     }
     to {
-        top:10rem;
+        top: -8.9rem;
         transform: translateX(10px);
     }   
 }
