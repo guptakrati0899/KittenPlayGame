@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/game.css">
+    <title>Kitten PlayGame</title>
+</head>
+<body>
+    <div class="game">
+        <div>
+            <img class="logo_img" src="../Assets/logo.png">
+        </div>
+        <div class="rating">
+            <img class="trophy" src="../Assets/trophy.svg">
+            <img class="star" src="../Assets/blackstar.png">
+            <img class="star" src="../Assets/blackstar.png">
+            <img class="star" src="../Assets/blackstar.png">
+            <img class="star" src="../Assets/blackstar.png">
+            <img class="star" src="../Assets/blackstar.png">
+            <input 
+                class="rating-1" 
+                max="5" 
+                oninput="this.style.setProperty('--value', this.value)" 
+                step="0.5" 
+                type="text" 
+                value="0">
+        </div>
+        <div class="volume">
+            <img class="volume_img" src="../Assets/volume.svg">
+        </div>
+        <div class="logout">
+            <img class="logout_img" src="../Assets/logout.svg">
+        </div>
+        <div class="kittens">
+            <div class="carpet-kittens">
+                <img class="carpet_img1" src="../Assets/carpet.svg" alt="carpet">
+                <img class="cat1" src="../Assets/kitten.svg">
+                <img class="cat2" src="../Assets/kitten.svg">
+                <img class="cat3" src="../Assets/kitten.svg">
+                <img class="cat4" src="../Assets/kitten.svg">
+            </div>
+            <div class="text-kitty">
+                <div class="helper_text">
+                    <div>Four Kittens are Playing.</div>
+                    <div>Four more kittens join in.</div>
+                    <div>How many kittens are there altogether now?</div>
+                </div>
+                <div class="black-kitty">
+                    <img class="blackcat1" src="../Assets/kitten-1.svg">
+                    <img class="blackcat2" src="../Assets/kitten-1.svg">
+                    <img class="blackcat3" src="../Assets/kitten-1.svg">
+                </div>
+            </div>
+        </div>
+        <div class="result">
+
+        </div>
+    </div>
+</body>
+</html>
