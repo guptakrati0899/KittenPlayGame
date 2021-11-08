@@ -1,4 +1,4 @@
-let btn = document.getElementById('btn');
+let btn = document.getElementById('enter');
 let output = document.getElementById('outputtext');
 
 btn.addEventListener('click', function(e) {
@@ -12,7 +12,7 @@ btn.addEventListener('click', function(e) {
 }) 
 
 function win() {
-    const winStar = `<div class="rating">
+    const winner = `<div class="rating">
     <img class="trophy" src="../Assets/trophy.svg">
     <img class="star_img yellow_star" src="../Assets/yellow_star.png">
     <img class="star" src="../Assets/blackstar.png">
@@ -28,14 +28,21 @@ function win() {
     <img class="win" src="../Assets/star.svg">
     <p class="win_text">Very Nice</p>`
     
-    document.querySelector('#outputtext').innerHTML = winStar;
+    document.querySelector('#outputtext').innerHTML = winner;
+    var timer = setTimeout(function(){
+        window.location.reload();
+    },3000);
     
 }
 
 function loose() {
-    const looseStar = `<img class="loose" src="../Assets/star1.svg">
+    const looser = `<img class="loose" src="../Assets/star1.svg">
     <p class="loose_text">Oops Try again</p>`
     
-    document.querySelector('#outputtext').innerHTML = looseStar;
+    document.querySelector('#outputtext').innerHTML = looser;
+    
+    var timer = setTimeout(function(){
+        window.location.reload();
+    },3000);
     
 }
